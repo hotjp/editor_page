@@ -1,0 +1,270 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #f7f7f7;
+    }
+
+    .editor_wrap {
+        position: relative;
+        margin: 43px 30px;
+        min-height: 898px;
+        min-width: 800px;
+    }
+
+    .phone {
+        position: absolute;
+        width: 435px;
+        height: 898px;
+        background: url("../images/ip6.png") center center no-repeat;
+    }
+
+    .phone_content {
+        position: absolute;
+        left: 30px;
+        top: 114px;
+        width: 375px;
+        height: 677px;
+        background-color: #f0f0f0;
+    }
+
+    .widget {
+        box-sizing: border-box;
+        border: solid 1px transparent;
+        width: 375px;
+        min-height: 100px;
+        margin-bottom: 3px;
+    }
+
+    .widget img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .widget .control {
+        position: absolute;
+        right: 0;
+        top: 0;
+        widows: 35px;
+    }
+
+    .widget .relative {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .widget .mark {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        border: solid 1px #ff6600;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        z-index: -1;
+    }
+
+    .widget.hover {
+        z-index: 1;
+    }
+
+    .widget.hover .mark {
+        opacity: 1;
+        background-color: rgba(255, 102, 0, .5);
+        z-index: 1;
+    }
+
+    .widget .relative .editit {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -24px;
+        margin-left: -70px;
+        width: 140px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 48px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .widget .control a {
+        display: block;
+        width: 35px;
+        border: solid 1px #ffd0b0;
+    }
+
+    .widget .control .remove {
+        height: 35px;
+        background: #fff0e5 url("../images/remove_btn.png") center center no-repeat;
+    }
+
+    .widget .control .move {
+        margin-top: 15px;
+        height: 50px;
+        background: #fff0e5 url("../images/move_btn.png") center center no-repeat;
+    }
+
+    .widget h4 {
+        height: 35px;
+        line-height: 35px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .phone_content .widget h4, .widget.dp h4 {
+        display: none;
+    }
+
+    .widgets_lib {
+        box-sizing: border-box;
+        padding-left: 470px;
+        width: 100%;
+    }
+
+    .widgets_lib .tit {
+        height: 45px;
+        line-height: 45px;
+        text-indent: 15px;
+        background-color: #e9e9e9;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .widgets_lib h3.tit {
+        font-weight: normal;
+        background-color: #f4f4f4;
+        border-bottom: solid 1px #d9d9d9;
+    }
+
+    .widgets_lib h3.tit span {
+        font-size: 12px;
+    }
+
+    .widgets_lib .widget img {
+        height: 105px;
+        width: auto;
+    }
+
+    .widgets_box {
+        height: 190px;
+        background-color: #fff;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .widgets_box ul {
+        list-style: none;
+    }
+
+    .widgets_box ul li {
+        float: left;
+        width: auto;
+        margin: 15px;
+    }
+    /*滚动条*/
+
+    .viewport {
+        width: 375px;
+        height: 677px;
+        overflow-x: visible;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .overview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 375px;
+        min-height: 100%;
+        list-style: none;
+    }
+
+    .edit_btns {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 60px;
+        line-height: 60px;
+        background-color: #f0f0f0;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .edit_btns .edit_btn {
+        display: inline-block;
+        margin: 0 8px;
+        width: 80px;
+        height: 28px;
+        border-radius: 2px;
+        border: none;
+        color: #fff;
+        background-color: #ff6600;
+    }
+
+    .overview .dropable {
+        min-height: 677px;
+        padding-bottom: 35px;
+    }
+
+    .overview .dropable.over {
+        background-color: rgba(255, 102, 0, .2);
+        ;
+    }
+
+    .thumb .end, .thumb {
+        background-color: #afafaf;
+    }
+
+    .scrollbar {
+        position: absolute;
+        top: -10px;
+        right: -50px;
+        width: 8px;
+        background-color: #e4e4e4;
+        padding-bottom: 20px;
+    }
+
+    .thumb {
+        width: 8px;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .thumb .end {
+        overflow: hidden;
+        height: 5px;
+        width: 13px;
+    }
+
+    .disable {
+        display: none;
+    }
+
+    .indicator {
+        position: absolute;
+        font-size: 9px;
+        width: 10px;
+        height: 10px;
+        display: none;
+        color: red;
+    }
