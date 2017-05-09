@@ -38,9 +38,9 @@ $(function() {
   });
 
   $('#target').droppable({
-    // accept: '#d1,#d3',
+
     onDragEnter: function(e, source) {
-      
+
       if ($(source).closest('.phone').length == 0) {
         $('#target').droppable('enable');
         $(source).draggable('proxy').css('border', '1px solid red');
@@ -63,7 +63,7 @@ $(function() {
 
         $(this).removeClass('over');
         initListElm(el, true);
-$('#scrollBar').tinyscrollbar();
+        $('#scrollBar').tinyscrollbar();
       }
       $('#target').droppable('disable');
     }
