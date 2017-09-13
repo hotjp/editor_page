@@ -34,21 +34,21 @@
         box-sizing: border-box;
         border: solid 1px transparent;
         width: 375px;
-        min-height: 100px;
+        min-height: 107px;
         margin-bottom: 3px;
     }
 
     .widget img {
         display: block;
         width: 100%;
-        height: auto;
+        min-height: 107px;
     }
 
     .widget .control {
         position: absolute;
         right: 0;
         top: 0;
-        widows: 35px;
+        width: 37px;
     }
 
     .widget .relative {
@@ -119,10 +119,14 @@
     }
 
     .widget h4 {
+        width: 200px;
         height: 35px;
         line-height: 35px;
         font-weight: normal;
         text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .phone_content .widget h4, .widget.dp h4 {
@@ -156,11 +160,11 @@
 
     .widgets_lib .widget img {
         height: 105px;
-        width: auto;
+        width: 205px;
     }
 
     .widgets_box {
-        height: 190px;
+        /*height: 190px;*/
         background-color: #fff;
         overflow-x: auto;
         overflow-y: hidden;
